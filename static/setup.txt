@@ -1,0 +1,23 @@
+plugin.tx_cablanfacebookregister_pi1 = USER_INT
+plugin.tx_cablanfacebookregister_pi1 {
+	# uid of the page where Frontend user records are stored
+	usersPid = {$plugin.tx_cablanfacebookregister_pi1.usersPid}
+	fbusersPid = {$plugin.tx_fbconnect_pi1.usersPid}
+	# Facebook API key
+	apiKey = {$plugin.tx_cablanfacebookregister_pi1.apiKey}
+	fbapiKey = {$plugin.tx_fbconnect_pi1.apiKey}
+	# Facebook application secret
+	secret = {$plugin.tx_cablanfacebookregister_pi1.secret}
+	fbsecret = {$plugin.tx_fbconnect_pi1.secret}
+	
+}
+
+# Include the plugin class as we are USER_INT
+includeLibs = EXT:cablan_facebook_register/pi1/class.tx_cablanfacebookregister_pi1.php
+
+// Include Facebook xmlns in html-tag
+config.htmlTag_setParams := appendString( xmlns:fb="http://www.facebook.com/2008/fbml")
+
+// Include our javascript file in the pages
+#page.includeJS.fbconnect = {$plugin.tx_fbconnect_pi1.javascriptFile}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'cablan_facebook_register'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.list_type_pi1">Facebook User Registration and Login</label>
+			<label index="fe_users.tx_cablanfacebookregister_facebook_user">Facebook User</label>
+		</languageKey>
+	</data>
+</T3locallang>

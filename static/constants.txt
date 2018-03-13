@@ -1,0 +1,13 @@
+plugin.tx_cablanfacebookregister_pi1 {
+	# cat=fbconnect; type=int+; label=User storage page:uid of the page where Frontend user records are stored
+	usersPid = 
+	# cat=fbconnect; type=string; label=Facebook API key:The API key of your Facebook application
+	apiKey = 	
+	# cat=fbconnect; type=string; label=Facebook secret:The application secret of your Facebook application
+	secret = 
+	## cat=fbconnect; type=string; label=Template file
+	#templateFile = EXT:fbconnect/res/pi1_template.html
+	## cat=fbconnect; type=string; label=Javascript file
+	#javascriptFile = EXT:fbconnect/res/functions.js
+}
+includeLibs = EXT:cablan_facebook_register/pi1/class.tx_cablanfacebookregister_pi1.php

@@ -1,0 +1,1 @@
+This extension allows user to register to a TYPO3 site with Facebook. You can then use the standard fbconnect extension to login, but that extension doesn't allow to create new users.
